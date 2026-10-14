@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta name="theme-color" content="#0b1020">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%230b1020'/%3E%3Ccircle cx='32' cy='32' r='9' fill='%23ff5d6c'/%3E%3Cellipse cx='32' cy='32' rx='26' ry='10' fill='none' stroke='%233ee8ff' stroke-width='3' transform='rotate(30 32 32)'/%3E%3Cellipse cx='32' cy='32' rx='26' ry='10' fill='none' stroke='%233ee8ff' stroke-width='3' transform='rotate(-30 32 32)'/%3E%3C/svg%3E">
+  <title>A.N.T.İ. Krizi: Kimyasal Denge</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&family=Nunito:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="importmap">
+    { "imports": { "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js" } }
+  </script>
+</head>
+<body>
+  <div id="app">
+    <canvas id="gl"></canvas>
+
+    <!-- 2D ekranlar (başlık, harita, müze) -->
+    <div id="screens"></div>
+
+    <!-- Oyun içi arayüz -->
+    <div id="hud" class="hidden">
+      <div id="hud-top">
+        <div id="objective"></div>
+        <div id="inventory"></div>
+        <button id="btn-exit" class="chip" aria-label="Haritaya dön">✕</button>
+      </div>
+      <div id="prompt" class="hidden"><span class="key">E</span><span id="prompt-text"></span></div>
+      <div id="touch-left"><div id="joy-base"><div id="joy-knob"></div></div></div>
+      <div id="touch-right">
+        <button id="btn-interact" class="tbtn" aria-label="Etkileşim">E</button>
+        <button id="btn-jump" class="tbtn big" aria-label="Zıpla">⤒</button>
+      </div>
+    </div>
+
+    <!-- Diyalog kutusu -->
+    <div id="dialog" class="hidden">
+      <div id="dialog-box">
+        <div id="portrait"><span id="portrait-icon"></span></div>
+        <div id="dialog-body">
+          <div id="speaker"></div>
+          <div id="dialog-text"></div>
+          <div id="dialog-options"></div>
+          <div id="dialog-next">▼ devam</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bulmaca ve test pencereleri -->
+    <div id="modal" class="hidden"><div id="modal-card"></div></div>
+
+    <div id="toast" class="hidden"></div>
+    <div id="fade"></div>
+  </div>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
