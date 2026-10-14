@@ -5,7 +5,11 @@ MEB 7. ve 8. sınıf Fen Bilimleri kimya/madde kazanımlarına uygundur.
 
 Oyun baştan sona oynanabilir: **Prolog** (Ankara sığınağı, atom yapısı), **Bölüm 1: Ordu** (saf maddeler, element ve bileşik), **Bölüm 2: İzmir** (karışımlar, ayırma yöntemleri, çözünme hızı), **Bölüm 3: Konya** (asit, baz, pH, indikatör, nötralleşme), **Bölüm 4: Zonguldak** (ısı-sıcaklık, hal değişimi, öz ısı, kaynama), **Bölüm 5: Ankara finali** (kütlenin korunumu, denklem denkleştirme, yeşil kimya) ve **Epilog** (son-test, kazanım artışı, sertifika).
 
-## Çalıştırma
+## Oyna
+
+Canlı sürüm: **https://kutlu53.github.io/anti-krizi-kimyasal-denge/** (telefon ve bilgisayar tarayıcısında açılır).
+
+## Yerelde çalıştırma
 
 Kurulum yok. Tek gereken bir yerel sunucu (ES modülleri `file://` ile açılmaz).
 
